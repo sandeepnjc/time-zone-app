@@ -14,7 +14,7 @@ pipeline
 					{
 						steps
 							{
-								bat 'mvn package deploy -dmuleDeploy'
+								bat 'mvn package deploy -DmuleDeploy'
 							}
 					}
 			}
