@@ -31,6 +31,18 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>4.3.0</muleVersion>
+						<username>cenversa</username>
+						<password>C3nv3rs@2148</password>
+						<applicationName>time-zone-app</applicationName>					
+						<environment>Sandbox</environment>
+						<region>us-east-2</region>
+						<objectStoreV2>true</objectStoreV2>
+						<workers>1</workers>
+						<workerType>MICRO</workerType>
+					</cloudHubDeployment>				
 				</configuration>
 			</plugin>
 		</plugins>
