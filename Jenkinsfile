@@ -3,13 +3,6 @@ pipeline
 		agent any
 		stages
 			{
-				stage('Unit Test') 
-					{ 
-      					steps 
-      						{
-      							bat 'mvn clean test'
-      						}
-      				}
 				stage('Build Application')
 					{
 						steps
@@ -17,6 +10,13 @@ pipeline
 								bat 'mvn clean install'
 							}
 					}
+				stage('Unit Test') 
+					{ 
+      					steps 
+      						{
+      							bat 'mvn test'
+      						}
+      				}					
 				stage('Deploy Application to Cloudhub')
 					{
 						steps
