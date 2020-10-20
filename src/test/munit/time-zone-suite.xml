@@ -8,7 +8,7 @@
 		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
 		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
 	<munit:config name="time-zone-suite.xml" />
-	<munit:test name="timezone-demoFlow-test" doc:id="4aeddda7-2715-4648-82d9-26411e5a6172" >
+	<munit:test name="timezone-demoFlow-test" doc:id="4aeddda7-2715-4648-82d9-26411e5a6172" ignore="true">
 		<munit:behavior >
 			<munit-tools:mock-when doc:name="Mock Request" doc:id="76a4c6bc-56fb-47ce-a7d3-8dc1f0cb1651" processor="http:request">
 				<munit-tools:with-attributes >
@@ -36,7 +36,7 @@ assert_expression_payload::main({payload: payload, attributes: attributes, vars:
 			</munit-tools:assert>
 		</munit:validation>
 	</munit:test>
-	<munit:test name="timezone-demo-test-suite-timezone-demoFlowTest" doc:id="43961623-452d-40c9-a509-7a1457e5cb17" description="Test">
+	<munit:test name="timezone-demo-test-suite-timezone-demoFlowTest" doc:id="43961623-452d-40c9-a509-7a1457e5cb17" description="Test" ignore="true">
 			<munit:execution>
 				<munit:set-event doc:name="Set Event" doc:id="beb1b6ce-aadd-43f2-b2c4-94f6291ba772">
 					<munit:attributes value="#[{uriParams:{region:'Asia',city:'Kolkata'}}]" />
